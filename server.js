@@ -40,18 +40,18 @@ const company = new Company ();
 
 
 //ruta de user
-app.get("/usuario", (req, res) => {
+app.get("/user", (req, res) => {
     return res.status(200).json(user);
 });
 
 //ruta de company
-app.get ("/empresa", (req, res) =>{
+app.get ("/company", (req, res) =>{
     return res.status(200).json(company);
 });
 
 
 //ruta de user-company
-app.get ("/usuario-empresa", (requ, res) =>{
+app.get ("/user-company", (requ, res) =>{
     return res.status(200).json({user, company});
 });
 
